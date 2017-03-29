@@ -3,31 +3,28 @@ using namespace std;
 #include "Character.h"
 
 int Character::getAge() {
-	return age;
+	return CharInfo.age;
 }
 
 void Character::setAge(int ageNew) {
-	age = ageNew;
+	CharInfo.age = ageNew;
 }
 
 string Character::getNameFirst() {
-	return nameFirst;
+	return CharInfo.nameFirst;
 }
 
 string Character::getNameSecond() {
-	return nameSecond;
+	return CharInfo.nameSecond;
 }
 
 string Character::getRace() {
-	return race;
+	return CharInfo.race;
 }
 
 //Not sure how to write this constructor implementation.
 Character::Character(Information Info) {
-	age = Info.age;
-	nameFirst = Info.nameFirst;
-	nameSecond = Info.nameSecond;
-	race = Info.race;
+	CharInfo = Info;
 }
 
 Character::~Character() {

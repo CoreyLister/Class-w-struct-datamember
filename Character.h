@@ -9,10 +9,7 @@ using namespace std;
 
 class Character {
 private:
-	int age;
-	string nameFirst;
-	string nameSecond;
-	string race;
+	Information CharInfo;
 public:
 	int getAge();
 	void setAge(int ageNew);
