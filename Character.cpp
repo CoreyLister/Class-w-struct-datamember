@@ -2,32 +2,32 @@ using namespace std;
 
 #include "Character.h"
 
-int Information::getAge() {
+int Character::getAge() {
 	return age;
 }
 
-void Information::setAge(int ageNew) {
+void Character::setAge(int ageNew) {
 	age = ageNew;
 }
 
-string Information::getNameFirst() {
+string Character::getNameFirst() {
 	return nameFirst;
 }
 
-string Information::getNameSecond() {
+string Character::getNameSecond() {
 	return nameSecond;
 }
 
-string Information::getRace() {
+string Character::getRace() {
 	return race;
 }
 
 //Not sure how to write this constructor implementation.
-Character::Character(Information(int _age, string _nameFirst, string _nameSecond, string _race)) {
-	Information age = _age;
-	Information nameFirst = _nameFirst;
-	Information nameSecond = _nameSecond;
-	Information race = _race;
+Character::Character(Information Info) {
+	age = Info.age;
+	nameFirst = Info.nameFirst;
+	nameSecond = Info.nameSecond;
+	race = Info.race;
 }
 
 Character::~Character() {

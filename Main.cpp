@@ -6,7 +6,12 @@
 using namespace std;
 
 int main() {
-	Character Irina(Information(26, "Irina", "Lister", "Aryan"))
+	Information IrinaInfo;
+	IrinaInfo.age = 26;
+	IrinaInfo.nameFirst = "Irina";
+	IrinaInfo.nameSecond = "Lister";
+	IrinaInfo.race = "Romanian";
+	Character Irina(IrinaInfo);
 }
 
 /*
